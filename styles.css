@@ -1,0 +1,66 @@
+/* Center the content on the screen and assign a background color */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the calculator container */
+.calculator {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+}
+
+/* Style the display area */
+.calculator__display {
+    background: #222;
+    color: #fff;
+    font-size: 2rem;
+    padding: 20px;
+    text-align: right;
+}
+
+/* Style the buttons */
+.calculator__buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+.calculator__button {
+    background: #e0e0e0;
+    border: none;
+    font-size: 1.5rem;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.calculator__button:hover {
+    background: #d0d0d0;
+}
+
+#clear {
+    background: #f44336;
+    color: white;
+}
+
+#clear:hover {
+    background: #e53935;
+}
+
+#equals {
+    grid-column: span 4;
+    background: #4caf50;
+    color: white;
+}
+
+#equals:hover {
+    background: #43a047;
+}
